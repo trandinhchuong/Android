@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="293dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rada" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="46dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bluetooth" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="OFF"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="172dp"
+        android:layout_height="23dp"
+        android:text=">bật bluetooth để kết nối"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="61dp"
+        android:background="@drawable/ic_main_menu"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/button_cos-pha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="COS_PHA"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/button_xinhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="XI NHAN"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_hieuung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="HIỆU ỨNG"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
