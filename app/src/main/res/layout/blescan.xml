@@ -7,15 +7,6 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="301dp"
-        android:layout_height="293dp"
-        android:layout_marginTop="156dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rada" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -23,6 +14,7 @@
         android:layout_height="58dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/rada"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_bluetooth" />
@@ -49,9 +41,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <LinearLayout
-        android:layout_width="421dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="61dp"
         android:background="@drawable/ic_main_menu"
+
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,13 +53,12 @@
 
         <Button
             android:id="@+id/button_home"
-            android:layout_width="34dp"
+            android:layout_width="57dp"
             android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="1"
             android:background="@null"
-            android:textColor="#FFFFFF"
-            />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button_cos-pha"
@@ -74,8 +67,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:text="COS_PHA"
-            android:textColor="#FFFFFF"
-            />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button_xinhan"
@@ -84,7 +76,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:text="XI NHAN"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button_hieuung"
@@ -93,8 +85,20 @@
             android:layout_weight="1"
             android:background="@null"
             android:text="HIỆU ỨNG"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="207dp"
+        android:layout_height="207dp"
+        android:background="@drawable/rada"
+        android:orientation="vertical"
+        android:rotation="0"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.37" />
 
 
 </android.support.constraint.ConstraintLayout>
